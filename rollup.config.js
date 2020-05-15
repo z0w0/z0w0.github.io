@@ -17,7 +17,7 @@ export default {
 		resolve(),
 		commonjs(),
 		babel({ babelHelpers: 'bundled' }),
-		postcss(),
+		postcss({ extract: true }),
 		production && terser()
 	]
 };
